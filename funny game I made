@@ -1,0 +1,382 @@
+#no just make a game
+
+#make a gorbalorb ending with mafia they also sell posion
+import random 
+from obama import  Mr_Beast , Healthing, enemy, random_enemy
+image_2 = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡟⠉⠉⠛⠒⠦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⢿⣄⠂⠀⠀⠀⠀⠈⠉⠒⠦⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⠏⠉⣤⠿⡗⣶⡶⣄⠀⣴⠒⢲⣦⡀⢈⣽⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡿⠁⢀⣼⢋⣴⣿⣿⣶⣽⣧⣵⣶⣦⡌⢻⣿⣷⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⠟⠁⢠⣾⣧⣿⡿⢋⣱⣈⣿⣿⣧⣼⣿⡷⠤⢿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⠋⠀⣠⣿⣿⣿⣿⠛⠛⠻⣿⡉⠀⢷⡾⠉⠙⠻⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⠁⢀⣴⣿⣿⣿⠟⠺⠷⢶⣤⣨⣿⣦⣤⣴⠚⢿⣟⠛⠿⠿⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⠀⣠⣿⣿⡋⠈⣇⣤⣶⡶⠟⠋⠉⠻⣿⣏⠀⠀⠀⠙⠷⣄⢦⡤⠾⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⢇⣾⣿⣿⣿⣿⣿⣿⣟⠉⠀⠀⣠⣴⣾⣿⣿⣷⣤⠄⠀⠀⠈⠳⣄⢀⣤⣾⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠙⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡿⠋⠉⠀⠀⠀⠉⠻⣷⡂⠀⢀⢠⡈⣷⡹⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠃⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⢹⣯⣿⣾⣷⣽⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠇⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⠷⠋⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⠀⢸⣿⣿⣿⣿⣏⣿⣿⣿⠏⠉⠙⠳⢺⡟⢿⢿⣿⣦⣀⠀⠀⠀⠨⣿⣿⣿⣿⣥⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠿⢣⢀⣾⣿⣿⣿⣿⡾⢻⣿⡟⠀⠀⠀⠀⣸⣇⣀⣄⣈⣙⣿⣿⣶⣶⠖⢻⣿⢿⣿⣷⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣠⠇⢿⣿⣿⣿⣿⡿⣵⣾⣿⠁⠀⠀⠀⢰⡟⠈⢿⣿⣶⣶⣿⡟⠋⠀⠀⠞⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣻⡟⠀⣿⣿⣿⣿⣿⡇⣿⣿⡿⠀⠠⡆⠀⠉⠁⠀⠀⠉⠛⠿⠏⠀⠀⠀⠀⣾⣯⣽⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡟⣰⣿⠀⢰⣿⣿⣿⣿⡿⣿⣦⣼⠇⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠄⢼⢿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡏⣰⣿⣿⠀⣾⣿⣿⣿⡇⠀⠈⣿⡏⠀⠀⠀⠀⢷⡀⠀⠀⠀⠀⠀⠀⢀⡴⠃⠀⣾⠀⢉⡏⠈⢿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠇⢠⣿⣿⣿⡄⣿⣿⣿⣿⣿⣶⣾⡿⠀⠀⠀⠀⠀⣼⠃⠀⠀⠀⠀⠀⠀⢸⢀⡀⣸⡇⠀⣎⡇⠀⠘⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠃⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⡿⠀⠀⠀⣀⠀⠀⠀⠛⠳⣶⡿⡁⣠⠟⠁⠀⠀⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠃⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⢰⣷⠀⠀⠈⠻⣷⣶⣒⣦⣌⣉⠉⣰⡏⠀⠀⠀⠀⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⠕⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣦⠀⠀⠀⠀⠀⠈⠋⠀⠀⠀⠀⢻⣌⣿⣷⣾⡿⢢⣿⠁⠀⠀⠀⢀⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠃⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠙⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⠿⠏⠀⣸⡇⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡿⠋⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢋⡄⠀⢱⣿⡿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠇⢠⡟⠀⠀⠀⠀⠀⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡿⢷⣤⣤⣴⣿⣿⣿⣿⣿⣿⡟⠋⣽⠟⢹⡀⠻⣆⠘⠛⠀⠙⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠾⠋⢀⡤⠶⢦⡄⠀⢹⣥⢠⡀⠉⠛⢿⣇⠀⠐⠑⠀⠙⣷⡄⠀⠀⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⣰⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⠀⣠⠏⠀⠀⠀⣿⣤⡯⠁⢀⡙⣦⣄⠀⠙⢷⣄⠀⠀⠀⠈⠻⣆⠀⣿⣿⣿⣿⣦⣤⣀⣀⠀⢀⣾⢿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠞⠁⡇⠀⡏⠀⠀⠀⢀⣿⡟⠀⣰⣿⠋⢹⡟⣷⣄⡀⠙⠷⣄⠀⠀⠀⠘⠿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡙⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠁⠀⠀⢀⣾⡿⠁⣰⣿⠃⠀⢀⣿⠞⢿⣳⠀⠀⠉⠳⣄⠀⠈⠁⢘⢿⣿⣿⣿⣿⣿⣿⣿⣿⡙⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⣠⣾⣿⠇⠰⢿⠃⠀⣴⣿⡏⠀⢸⣿⣧⡀⠀⠀⠈⠻⡳⣦⡀⠀⠙⠿⣿⣿⣿⣿⣿⡟⡇⠘⡉⠛⠒⠛⠛⠓⠂⠀⠀⣀⠀⠀⠀⠀⠀"
+I_have_power = random.randint(10000,100000)
+a1 = random.randint(0,1000)
+goralobe = 0
+health = 100
+gorbalobe_health = Healthing()
+def goralobe_abillity():
+  if goralobe > 0:
+    global health
+    health -= 5
+    if goralobe > 1:
+      gorbalobe_health.points(100)
+      
+    if health <= 0:
+      pps()
+    
+
+def death():
+  global health
+  if health <=0:
+    print("game over L")
+    pps()
+
+max_mana = 20
+mana = max_mana
+money = random.randint(0,30)
+player_id = a1
+
+def get_money():
+  global money
+  money += random.randrange(5,10,15)
+
+def chance_to_get_money():
+  global money
+  chances = random.randint(1,100)
+  if chances == 70:
+    global money
+    money += random.randrange(0,10,5)
+    print("wow you found money!")
+  print("$",money)
+
+  
+print("your player id is:")
+print(player_id)
+print("\n---------------------")
+def ea():
+  print("you see something in the distance but you ignore it")
+  print("1: tell me more about yesland")
+  print("2: ok lets go the village")
+  print("3: I hate socializing I think we should camp here")
+  print("\n-------------------------------------------")
+  e = input()
+  if e == "1":
+    chance_to_get_money()
+    print("alright its going to take a while because there is a lot to know about the world so let me start yesland is a land where many souls go after death in different parts of the universe\n--------------------------------------------------------")
+        
+        
+    print("")
+    print("1: so like the land of the dead")
+    print("2: is this heaven")
+        
+    L_Bozo = input()
+    if L_Bozo == "1":
+      print(
+            "I mean you could say that but many of the dead souls here are just normal humans or people that are human like, but there is animals and monsters from other worlds, planets, or universes"
+          )
+      print("it's very intersenting on how this place works but their are many things that can happen")
+      print("you're not as special as some overs that can use magic and summon creatures to fight along side them\n----------------------------------------------")
+      print("")
+      print("1:wait how does magic work")
+      print("2:tell me more")
+      print("3:ask to go to the village")
+      pizza_time = input("")
+      if pizza_time == 1:
+          print()
+      elif pizza_time == 2:
+        print()
+      elif pizza_time == 3:
+        print()
+
+        
+    elif L_Bozo == "2":
+      print("shut up christan its nothing like heaven")
+      print("the stranger is mad now")
+      print("")
+      print("*He slaps you as hard as a puppy, but somehow you die")
+      print("this is not even an ending, ending")       
+      pps()
+    else:
+      print("no")
+      ea()
+          
+  elif e == "2":
+        
+    chance_to_get_money()
+    print("")
+    print("y'all walk to the village")
+    print("you see some villagers you")
+    print("alright if you want to help out any one of theses villagers you can, but I strongly advices not to get close to any of them")
+        
+        
+
+  elif e == "3":
+    chance_to_get_money()
+    print("")
+    print("Damn you don't have to be that harsh all you had to say is no")
+    print("")
+    print("Alright then I will go get some food for use to eat")
+    print("he walks out witht a weapon in hand")
+    print("")
+    print("1: wait until he gets back")
+    print("2:leave and explore the area")
+    print("") 
+    input_1 = input("")
+    if input_1 == 1:
+       print("")
+    elif input_1 == 2:
+      print("")
+  else:
+    print("brove you need to chose one of them you can't just not chose one")
+    ea()
+def pps():
+  global health
+  global mana
+  global money
+  if health >100:
+    health = 100
+  
+  money += 10
+  print("money:")
+  print("$",money)
+  print("\n-----------------")
+  print("health:")
+  print(health)
+  print("\n-----------------")
+  if player_id == 583 or player_id == 235:
+    print("say superidol for your input")
+    print("")
+  print(
+    "Welcome to the world of Yesland where all your fantasies come true, well not cause you KYSed. It was really sad, you jumped into a blender"
+  )
+  print(
+    "you know what, that's a pretty dumb way to die, but do you think it's a dumb way to die for you know, you. As I thought you were pretty smart\n--------------------------"
+  )
+  print("")
+  print("Y/N:")
+  dumb_chose = input("")
+  if dumb_chose == "yes" or dumb_chose=="y" or dumb_chose=="Y":
+    print("Exactly what's what I'm saying")
+    print("So do you want to start the adventure")
+    adventer_starts = input("")
+    if adventer_starts == "Y" or "yes" or 'y':
+      print("")
+      print(
+        "well if you want to go back to life which you defenenly don't want to do that I guess you want to see the town near by"
+      )
+      print("you see something in the distance but you ignore it")
+      print("1: tell me more about yesland")
+      print("2: ok lets go the village")
+      print("3: I hate socializing I think we should camp here")
+      print("\n-------------------------------------------")
+      e = input()
+      if e == "1":
+        chance_to_get_money()
+        print("alright its going to take a while because there is a lot to know about the world so let me start yesland is a land where many souls go after death in different parts of the universe\n--------------------------------------------------------")
+        
+        
+        print("")
+        print("1: so like the land of the dead")
+        print("2: is this heaven")
+        
+        L_Bozo = input()
+        if L_Bozo == "1":
+          chance_to_get_money()
+          print(
+            "I mean you could say that but many of the dead souls here are just normal humans or people that are human like, but there is animals and monsters from other worlds, planets, or universes"
+          )
+          print("it's very intersenting on how this place works but their are many things that can happen")
+          print("you're not as special as some overs that can use magic and summon creatures to fight along side them\n----------------------------------------------")
+          print("")
+          print("1:wait how does magic work")
+          print("2:tell me more")
+          print("3:ask to go to the village")
+          pizza_time = input("")
+          if pizza_time == 1:
+            print("")
+          elif pizza_time == 2:
+            print("")
+          elif pizza_time == 3:
+            print("")
+
+        
+        elif L_Bozo == "2":
+          print("shut up christan its nothing like heaven")
+          print("the stranger is mad now")
+          print("")
+          print("*He slaps you as hard as a puppy, but somehow you die")
+          print("this is not even an ending, ending")
+          pps()
+        else:
+          print("no")
+          ea()
+          
+      elif e == "2":
+        
+        chance_to_get_money()
+        print("")
+        print("y'all walk to the village")
+        print("you see some villagers you")
+        print("alright if you want to help out any one of theses villagers you can, but I strongly advices not to get close to any of them\n---------------------------------------")
+        print("")
+        print("1: go into a possible shop called yes's only foods")
+        print('2:talk to villagers')
+        print("3:move on to explore\n----------------------------------------")
+        
+        WYA = input("")
+        if WYA == "1":
+          chance_to_get_money()
+          print("you walking to the shop*")
+          print("you catch a glims of a group of people in the backroom of the shop you belive that it is emploiees")
+          print("\n-------------------")
+          print("hello there our names are little jimmy and little tom we are the owner of this shop after our parents left to go get more goods from the city Verberna")
+          print('anyways what would you like to buy')
+          print("")
+          print("2:suernade")
+          print("3: would you like to buy this gorbablorb\n------------------------------")
+          tu_papa = input("")
+          if tu_papa == "1":
+            print("I see you are looking at our glaboxb etshs it is one of a kind")
+            print("would you like to buy it, it is only $ 30 Y/N\n-------------------------------------------")
+            obama = input("")
+            if obama == "Y" or obama == "y":
+              
+              if money >= 30:
+                money =- 30
+                print("thank you for buying\n---------")
+              elif money < 30:
+                print("sorwy you can't buy this. you are poor")
+              
+              
+          elif tu_papa== "2":
+            print("suernade cost $20")
+            print("Would you like to buy it")
+            print("Y/N")
+            suer_buy = input("")
+            if suer_buy == "Y" or suer_buy == "y": 
+              if money >= 20:
+                money -= 20
+                print("you bought suerande")
+              elif money < 20:
+                print("sorwy you can't buy this. you are poor")
+            elif suer_buy == "N" or suer_buy == "n":
+              print("")
+          elif tu_papa =="3":
+            print("Would you like to buy Gorbalord(We have to advese you that Gorbalorbs are very additive\n------------------- it would cost you $40)")
+            print("\n--------------------------------")
+            don_t_buy = input("")
+            if don_t_buy == "yes" or don_t_buy == "y" or don_t_buy == "Y":
+              if money >= 40:
+                money -= 40
+                global goralobe
+                goralobe = 1
+                print("We hope you enjoy")
+                print("\n----------------")
+                print("")
+                print("After getting the gorbablorbe you use it immediately*")
+                print("you feel very relaxed and start seeing things")
+                if player_id == 583 or player_id == 235:
+                  print("the effects of the garbablorbe wore off and you start to feel normal,you if as you have evaded something")
+                  goralobe = 0
+                  goralobe -= I_have_power
+                elif player_id == 420:
+                  print("After getting the gorbablorbe you use it immediately*")
+                  print("you feel very relaxed and start seeing things")
+                  print("you bought more and used it all up")
+                  health -= 100000
+                  money -= 1000000000000000
+                  print("you ODED")
+                  print("snoooooooooooooooop dog*2")
+                  print('aditic ending')
+                  pps()
+                  print("you hear one of the buff owners say somehthing about a family but you blacked out\n---------------------")
+                  print("you wake up out side the shop")
+                  print("you feel very unwell")
+                  
+              elif money < 40:
+                print("sorwy you can't buy this. you are poor")
+                
+            elif don_t_buy == "n" or don_t_buy == "N" or don_t_buy =="no" or don_t_buy == "No":
+                print("alright if you don't want it")
+          else:
+            print("would you like to leave")
+            print("\n--------------------------------")
+          
+        elif WYA == "2":
+          print()
+        elif WYA == "3":
+          print()
+        
+
+      elif e == "3":
+        chance_to_get_money()
+        print("")
+        print("Damn you don't have to be that harsh all you had to say is no")
+        print("")
+        print("Alright then I will go get some food for use to eat")
+        print("he walks out witht a weapon in hand")
+        print("\n----------------------------------------------------------")
+        print("1: wait until he gets back")
+        print("2:leave and explore the area")
+        print("\n----------------------------")
+        input_1 = input("")
+        if input_1 == 1:
+          print("")
+        elif input_1 == 2:
+          print("")
+      else:
+        print(
+          "brove you need to chose one of them you can't just not chose one")
+        ea()
+
+    else:
+      print("")
+      print(
+        "well ok then I will leave you here also uuuhhhhmm my name is Obama and if you need any help just say 'Obama prism'"
+      )
+      print("*Obama leaves*")
+      print("")
+      print("what now")
+  elif player_id == 583 or 235 and dumb_chose == "superidol":
+    if dumb_chose == "superidol" and player_id >235 and player_id <583 or player_id<235:
+      pps()
+    if dumb_chose == "superidol" and player_id >583 and player_id >235  or player_id<583 and player_id <235:
+      pps()
+    chance_to_get_money()
+    print("wait you're a bit different from the others I will let you go, but I'll let you know something. you are something special, so don't die or try to fight the god of this place. Alright then see you")
+    print("*the person leaves*")
+    
+    print("you see a sign that show diffrent areas. you read it")
+    print("")
+    print("Jackson villa")
+    print("creator con cave")
+    print("short place")
+    print("Gressy Chair")
+    print("Verberna")
+    print("where would you like to go")
+    print("n\-------------------------")
+    go_to_city = input("")
+    if go_to_city == "Verberna" or "verberna":
+      print("")
+    elif go_to_city == "Jackson villa" or "jackson Villa" or "jackson villa":
+      chance_to_get_money()
+      print("You start the long journy twords Jackson villa")
+    elif go_to_city == "creator con cave" or "Creator Con Cave":
+      chance_to_get_money()
+      print("")
+    elif go_to_city == "Short Place" or "short place":
+      chance_to_get_money()
+      print("")
+    elif go_to_city == "gressy chair" or "Gressy Chair":
+      print("")
+  else:
+    print("you said no")
+    print("You know what Iamma just kill you")
+    print("")
+
+    print("you dead how did you die you're already dead and you just got here")
+    print(image_2)
+    print("")
+    print("ending one out of tbd")
+    print("the second death ending")
+    print("\n-----------------")
+    print("")
+    pps()
+
+
+pps()
