@@ -1,4 +1,4 @@
-#1/19 & 1/23 perlin noise.
+# 1/19 & 1/23 perlin noise.
 Perline noise: Perline noise is a number that adds randomness to the generation. 
 
 
@@ -16,7 +16,7 @@ Here I played around with some of the videos and created a wave simulator that u
 
 
 
-#1/29/24
+# 1/29/24
 
 
 Today I worked on creating a flow field sim as I found one on the internet and felt like doing it.
