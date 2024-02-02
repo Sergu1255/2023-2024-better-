@@ -25,5 +25,5 @@ link to code:
 So what I did was follow through the tutorial and saw a lot of new functions in processing like final, and ArrayList<>
 
 right here is an image
-[here](grid.png)
+![image](grid.png)
 
