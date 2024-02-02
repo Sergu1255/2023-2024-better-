@@ -8,7 +8,11 @@ https://www.youtube.com/watch?v=0emj42Bn-_Y - terrain generation
 https://www.youtube.com/watch?v=na7LuZsW2UM&t=356s - talks about the beauty of Perlin noise  
 https://www.youtube.com/watch?v=zx7GrlzYY7U - flow field tutorial that utilizes Perlin noise to move for the strokes
 
+[here](waves.pde)
 
+![image](wave.png)
+
+Here I played around with some of the videos and created a wave simulator that uses perlin noise.
 
 
 
