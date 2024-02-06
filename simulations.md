@@ -35,4 +35,8 @@ What I found interesting is that LSU was able to model and simulate a way to ret
 
 The pandemic simulation by 1 brown and the Blue is something I want to recreate except I want to introduce doctors and cured patients. This means that I would introduce multiple new variables like mortality rate that ensures that patients also have a chance of dying which means that the death of patients should be moved into a certain box(like why would you have the dead lying around.)
 
+https://www.youtube.com/watch?v=alhpH6ECFvQ a video I'm viewing about creating a 2d fuild simulation
+
+
+https://www.youtube.com/watch?v=DxL2HoqLbyA video about entriapy
 # 2/5/2024
