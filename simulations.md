@@ -48,6 +48,11 @@ also now my processing is stuck in an infinite download state so the code I wrot
 
 I got it fixed and I have fished working on it [here is the funny goofy code.](pendulme.pde)
 
+![image](EA.png)
+
+
+here is an image of my code working as I use the acceleration = to pi.
+
 
 
 
