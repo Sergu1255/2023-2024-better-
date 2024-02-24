@@ -53,6 +53,18 @@ I got it fixed and I have fished working on it [here is the funny goofy code.](p
 
 here is an image of my code working as I use the acceleration = to pi.
 
+# 2/23/2024
+
+Today I worked on doing the factorial tree in processing using java what I found very intersenting is how the push and pop matrix works as I have used it before in my project during 9th grade. Moving on, I would to look more into push and pop maxtix and I have already found some videos on it. 
+
+here:https://www.youtube.com/watch?v=OaBSHuP4xcE
+
+here: https://www.youtube.com/watch?v=lalHizFnzp8
 
 
+![image](fractal.png)
 
+
+this is an image of what my has produced what I haded was instead of have lvl or leveling being added by 1 it would add by 2 (for somereason it would only work with 1 and 2) this caused a rounder and smoother branch that makes it more life like ( should probaly add leafs to honest.)
+
+[here](fractal_thing) is the floder that has both of the files of my code. 
