@@ -74,5 +74,5 @@ this is an image of what my has produced what I haded was instead of have lvl or
 
 for the past days I have been trying to create a pathfinder alrthinmoth however I have taken diffrent taturial videos 
 https://www.youtube.com/watch?v=aKYlikFAV4k&t=1572s
-However it has been very hard to do anything as these tutariols didn't work here is the code
+However it has been very hard to do anything as these tutariols didn't work here is the [here](
 
