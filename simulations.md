@@ -68,3 +68,11 @@ here: https://www.youtube.com/watch?v=lalHizFnzp8
 this is an image of what my has produced what I haded was instead of have lvl or leveling being added by 1 it would add by 2 (for somereason it would only work with 1 and 2) this caused a rounder and smoother branch that makes it more life like ( should probaly add leafs to honest.)
 
 [here](fractal_thing) is the floder that has both of the files of my code. 
+
+
+# 2/29/2024
+
+for the past days I have been trying to create a pathfinder alrthinmoth however I have taken diffrent taturial videos 
+https://www.youtube.com/watch?v=aKYlikFAV4k&t=1572s
+However it has been very hard to do anything as these tutariols didn't work here is the code
+
