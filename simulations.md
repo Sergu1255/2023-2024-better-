@@ -74,5 +74,7 @@ this is an image of what my has produced what I haded was instead of have lvl or
 
 for the past few days I have been trying to create a Pathfinder alrthinmoth however I have taken different tutorial videos 
 https://www.youtube.com/watch?v=aKYlikFAV4k&t=1572s
-However, it has been very hard to do anything as these tutorials didn't work here is the [here](pathfinder.js)
+However, it has been very hard to do anything as these tutorials didn't work [here](pathfinder.js) this is just the code
+
+![image](why.png)
 
