@@ -72,7 +72,7 @@ this is an image of what my has produced what I haded was instead of have lvl or
 
 # 2/29/2024
 
-for the past days I have been trying to create a pathfinder alrthinmoth however I have taken diffrent taturial videos 
+for the past few days I have been trying to create a Pathfinder alrthinmoth however I have taken different tutorial videos 
 https://www.youtube.com/watch?v=aKYlikFAV4k&t=1572s
-However it has been very hard to do anything as these tutariols didn't work here is the [here](
+However, it has been very hard to do anything as these tutorials didn't work here is the [here](pathfinder.js)
 
